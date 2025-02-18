@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- And thats how the lore of FNaF was hidden a long time ago -->
+<head>
+    <meta charset="UTF-8"> <!--Codificação de caracteres-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Sistema Bancario</title> <!-- Titulo da aba -->
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusao de script JS externo que vai controlar -->
+    <script src="logica.js"></script>
+    
+</head>
+<body>
+<!-- Conteiner pricnipal para o conteudo da interface-->
+    <div class="container">
+        <!--Titulo principal da aplicação-->
+        <h1>Sistema bancario</h1>
+       <!-- <h2>Sistema Bancario dos parça da 2k24-2N</h2> -->
+        
+       <label form="valor"> Digite um Valor:  </label><!--Rótulo para o campo de valor -->
+        
+        <input type="number" id="valor" placeholder="Ex: 100.00"><br> <!-- campo para inserir o valor -->
+
+        <!-- Botoes para interagir com a conta bancaria -->
+        <button class="botaoSac" onclick="sacar()">Sacar</button><!-- Botão para realizar o saque -->
+        <button class="botaoDep" onclick="depositar()">Depositar</button><!-- Botão para realizar o Deposito-->
+        <button class="gamblers" onclick="letsGoGambling()">Apostar</button>
+        <!-- Exibindo o saldo atual da conta -->
+        <div class="balance">
+            Saldo: R$ <span id="saldo">0.00</span> <!-- Exibição dinamica do saldo -->
+        </div>
+    </div>
+
+
+</body>
+</html>
