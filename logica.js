@@ -61,7 +61,9 @@ function letsGoGambling(){
         return
         }
         if(a==1){
-            saldo=saldo*Number(`1e${Math.random()*5}`)
+            let numba=(Math.random()*5).toFixed(0)
+            let numba2=(Math.random()*6)
+            saldo=saldo*Number(`${numba2}e${numba}`)
             alert('Jackpot as '+formatDate(new Date,'dma-dh'))
             atualizarSaldo()
         } else{
