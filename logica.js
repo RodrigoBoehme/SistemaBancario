@@ -54,13 +54,13 @@ function letsGoGambling(){
     if(valor<=saldo){
     a=((Math.random())*100).toFixed(0)
     if (a>80){
-        saldo+=valor*2
+        saldo+=valor*(Math.random()*10)
         alert('Win Win Win')
         console.log('Vitoria '+'R$'+(valor*2).toFixed(2)+' as '+formatDate(new Date,"dma-dh"))
         atualizarSaldo()
         return
         } else{
-            saldo-=valor
+            saldo-=valor*(Math.random()*2)
             console.log('Derrota, R$'+valor.toFixed(2)+' perdidos em uma aposta as '+formatDate(new Date,'dma-dh'))
             atualizarSaldo()
             return
